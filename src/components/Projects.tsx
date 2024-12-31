@@ -46,36 +46,40 @@ const Projects = () => {
   const [showAll, setShowAll] = useState(false);
 
   return (
-    <section id="projects" className="py-20 bg-gradient-to-br from-primary-light/10 to-white">
+    <section id="projects" className="py-20 bg-gradient-to-br from-primary-light/10 to-white dark:from-dark-bg dark:to-dark-card dark:text-gray-200 transition-colors duration-300">
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold">
+          <h2 className="text-3xl md:text-4xl font-bold animate-fade-in">
             Featured Projects
           </h2>
           <Toggle
             pressed={showAll}
             onPressedChange={setShowAll}
-            className="bg-primary/10 data-[state=on]:bg-primary data-[state=on]:text-white"
+            className="bg-primary/10 dark:bg-primary-light/10 data-[state=on]:bg-primary data-[state=on]:text-white transition-colors"
           >
             {showAll ? "Show Less" : "Show All"}
           </Toggle>
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {projects.slice(0, showAll ? projects.length : 3).map((project) => (
-            <Card key={project.title} className="group hover:shadow-lg transition-shadow">
+          {projects.slice(0, showAll ? projects.length : 3).map((project, index) => (
+            <Card 
+              key={project.title} 
+              className="group hover:shadow-lg dark:bg-dark-card dark:border-gray-700 transition-all duration-300 animate-scale-in"
+              style={{ animationDelay: `${index * 100}ms` }}
+            >
               <CardHeader>
-                <CardTitle className="text-xl group-hover:text-primary transition-colors">
+                <CardTitle className="text-xl group-hover:text-primary dark:group-hover:text-primary-light transition-colors">
                   {project.title}
                 </CardTitle>
-                <CardDescription>{project.description}</CardDescription>
+                <CardDescription className="dark:text-gray-400">{project.description}</CardDescription>
               </CardHeader>
               <CardContent>
                 <div className="flex flex-wrap gap-2 mb-4">
                   {project.tech.map((tech) => (
                     <span
                       key={tech}
-                      className="px-2 py-1 text-sm bg-primary/10 rounded-full"
+                      className="px-2 py-1 text-sm bg-primary/10 dark:bg-primary-light/10 rounded-full transition-colors"
                     >
                       {tech}
                     </span>
@@ -86,7 +90,7 @@ const Projects = () => {
                     href={project.github}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center gap-2 text-sm hover:text-primary transition-colors"
+                    className="flex items-center gap-2 text-sm hover:text-primary dark:hover:text-primary-light transition-colors"
                   >
                     <Github size={16} />
                     Code
@@ -95,7 +99,7 @@ const Projects = () => {
                     href="#"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center gap-2 text-sm hover:text-primary transition-colors"
+                    className="flex items-center gap-2 text-sm hover:text-primary dark:hover:text-primary-light transition-colors"
                   >
                     <ExternalLink size={16} />
                     Live Demo
