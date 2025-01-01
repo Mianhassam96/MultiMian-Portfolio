@@ -25,17 +25,17 @@ export default {
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
         primary: {
-          DEFAULT: "#8B5CF6",
-          light: "#A78BFA",
-          dark: "#7C3AED",
+          DEFAULT: "#9b87f5",
+          light: "#b3a4f7",
+          dark: "#7E69AB",
         },
         accent: {
-          DEFAULT: "#D946EF",
-          light: "#E879F9",
+          DEFAULT: "#6E59A5",
+          light: "#8B5CF6",
         },
         dark: {
           bg: "#1A1F2C",
-          card: "#222832",
+          card: "#221F26",
           text: "#F1F1F1",
         },
       },
@@ -47,6 +47,8 @@ export default {
         "pulse": "pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite",
         "float": "float 6s ease-in-out infinite",
         "glow": "glow 2s ease-in-out infinite",
+        "slide-in": "slideIn 1s ease-out",
+        "blur-in": "blurIn 1s ease-out",
       },
       keyframes: {
         fadeIn: {
@@ -79,10 +81,30 @@ export default {
         },
         glow: {
           '0%, 100%': {
-            boxShadow: '0 0 20px rgba(139, 92, 246, 0.3)',
+            boxShadow: '0 0 20px rgba(155, 135, 245, 0.3)',
           },
           '50%': {
-            boxShadow: '0 0 40px rgba(139, 92, 246, 0.6)',
+            boxShadow: '0 0 40px rgba(155, 135, 245, 0.6)',
+          },
+        },
+        slideIn: {
+          '0%': {
+            transform: 'translateX(-100%)',
+            opacity: '0',
+          },
+          '100%': {
+            transform: 'translateX(0)',
+            opacity: '1',
+          },
+        },
+        blurIn: {
+          '0%': {
+            filter: 'blur(10px)',
+            opacity: '0',
+          },
+          '100%': {
+            filter: 'blur(0)',
+            opacity: '1',
           },
         },
       },
