@@ -1,13 +1,6 @@
-import { ArrowDown, Download, Github, Linkedin } from 'lucide-react';
-import { Button } from './ui/button';
+import { ArrowDown } from 'lucide-react';
 
 const Hero = () => {
-  const handleDownloadResume = () => {
-    // Replace with your actual resume file path
-    const resumeUrl = '/path-to-your-resume.pdf';
-    window.open(resumeUrl, '_blank');
-  };
-
   return (
     <section id="home" className="min-h-screen relative bg-dark-bg text-white">
       {/* Full-screen banner with parallax effect */}
@@ -31,35 +24,6 @@ const Hero = () => {
           <p className="text-2xl md:text-3xl text-gray-300 animate-slide-in opacity-0" style={{ animationDelay: '0.5s', animationFillMode: 'forwards' }}>
             Turning Ideas into Digital Reality
           </p>
-
-          <div className="flex flex-wrap justify-center gap-6 mt-12 animate-fade-in opacity-0" style={{ animationDelay: '1s', animationFillMode: 'forwards' }}>
-            <Button
-              onClick={handleDownloadResume}
-              className="bg-primary/20 backdrop-blur-sm border border-primary/50 text-primary-light hover:bg-primary hover:text-dark-bg px-8 py-6 rounded-full transition-all duration-300 font-semibold group animate-glow"
-            >
-              <Download className="mr-2 group-hover:translate-y-0.5 transition-transform" />
-              Download Resume
-            </Button>
-
-            <div className="flex gap-4 items-center">
-              <a
-                href="https://github.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="p-4 rounded-full bg-dark-card hover:bg-primary/20 transition-colors duration-300 group"
-              >
-                <Github className="w-6 h-6 group-hover:text-primary-light transition-colors" />
-              </a>
-              <a
-                href="https://linkedin.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="p-4 rounded-full bg-dark-card hover:bg-primary/20 transition-colors duration-300 group"
-              >
-                <Linkedin className="w-6 h-6 group-hover:text-primary-light transition-colors" />
-              </a>
-            </div>
-          </div>
         </div>
         
         <div className="absolute bottom-8 animate-bounce-slow">
