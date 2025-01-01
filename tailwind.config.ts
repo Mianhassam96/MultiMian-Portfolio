@@ -25,17 +25,17 @@ export default {
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
         primary: {
-          DEFAULT: "#00FF84",
-          light: "#7AFFB9",
-          dark: "#00CC6A",
+          DEFAULT: "#8B5CF6",
+          light: "#A78BFA",
+          dark: "#7C3AED",
         },
         accent: {
-          DEFAULT: "#1EAEDB",
-          light: "#33C3F0",
+          DEFAULT: "#D946EF",
+          light: "#E879F9",
         },
         dark: {
-          bg: "#0A0A0A",
-          card: "#141414",
+          bg: "#1A1F2C",
+          card: "#222832",
           text: "#F1F1F1",
         },
       },
@@ -45,6 +45,8 @@ export default {
         "scale-in": "scaleIn 0.3s ease-out",
         "bounce-slow": "bounce 2s infinite",
         "pulse": "pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite",
+        "float": "float 6s ease-in-out infinite",
+        "glow": "glow 2s ease-in-out infinite",
       },
       keyframes: {
         fadeIn: {
@@ -65,6 +67,22 @@ export default {
           },
           '50%': {
             opacity: '.7',
+          },
+        },
+        float: {
+          '0%, 100%': {
+            transform: 'translateY(0)',
+          },
+          '50%': {
+            transform: 'translateY(-20px)',
+          },
+        },
+        glow: {
+          '0%, 100%': {
+            boxShadow: '0 0 20px rgba(139, 92, 246, 0.3)',
+          },
+          '50%': {
+            boxShadow: '0 0 40px rgba(139, 92, 246, 0.6)',
           },
         },
       },
