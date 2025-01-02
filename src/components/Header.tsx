@@ -27,7 +27,7 @@ const Header = () => {
   };
 
   return (
-    <header className="fixed w-full bg-white/80 dark:bg-dark-bg/90 backdrop-blur-sm z-50 shadow-sm transition-colors duration-300">
+    <header className="fixed w-full bg-dark-card/90 dark:bg-dark-bg/90 backdrop-blur-sm z-50 shadow-sm transition-colors duration-300">
       <div className="container mx-auto px-4 py-4">
         <nav className="flex justify-between items-center">
           <a href="#" className="text-2xl font-bold text-primary">
@@ -70,7 +70,7 @@ const Header = () => {
           </div>
 
           {isMenuOpen && (
-            <div className="absolute top-full left-0 right-0 bg-white dark:bg-dark-bg shadow-lg md:hidden transition-colors">
+            <div className="absolute top-full left-0 right-0 bg-dark-card dark:bg-dark-bg shadow-lg md:hidden transition-colors">
               <div className="flex flex-col items-center py-4">
                 <NavLinks />
               </div>
