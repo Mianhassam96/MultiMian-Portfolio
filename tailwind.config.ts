@@ -25,18 +25,18 @@ export default {
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
         primary: {
-          DEFAULT: "#9b87f5",
-          light: "#b3a4f7",
-          dark: "#7E69AB",
+          DEFAULT: "var(--primary)",
+          light: "var(--primary-light)",
+          dark: "var(--primary-dark)",
         },
         accent: {
-          DEFAULT: "#6E59A5",
-          light: "#8B5CF6",
+          DEFAULT: "var(--accent)",
+          light: "var(--accent-light)",
         },
         dark: {
-          bg: "#1A1F2C",
-          card: "#221F26",
-          text: "#F1F1F1",
+          bg: "var(--dark-bg)",
+          card: "var(--dark-card)",
+          text: "var(--dark-text)",
         },
       },
       animation: {
