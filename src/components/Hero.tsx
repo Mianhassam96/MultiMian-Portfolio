@@ -5,32 +5,47 @@ const Hero = () => {
     <section id="home" className="h-screen w-full relative bg-dark-bg flex items-center justify-center overflow-hidden">
       {/* Main content */}
       <div className="container mx-auto px-4 text-center relative z-10">
-        {/* Animated heading with gradient text */}
-        <h1 className="text-4xl md:text-7xl font-bold mb-6 animate-fade-in bg-gradient-to-r from-primary-light via-accent-light to-primary bg-clip-text text-transparent">
+        {/* Animated flowing heading with enhanced gradient text */}
+        <h1 className="text-4xl md:text-7xl font-bold mb-6 animate-slide-in bg-gradient-to-r from-primary-light via-accent-light to-primary bg-clip-text text-transparent hover:scale-105 transition-transform duration-300">
           Full Stack Developer
         </h1>
         
-        {/* Animated subheading */}
-        <div className="text-2xl md:text-4xl font-semibold text-primary-light/90 mb-8 animate-slide-up delay-200">
-          CEO & Founder of MultiMian
+        {/* Animated flowing subheading with glow effect */}
+        <div className="text-2xl md:text-4xl font-semibold mb-8 animate-blur-in delay-200">
+          <span className="bg-gradient-to-r from-accent-light via-primary to-primary-light bg-clip-text text-transparent animate-pulse">
+            CEO & Founder of MultiMian
+          </span>
         </div>
         
-        {/* Description with glow effect */}
-        <p className="text-lg md:text-xl text-dark-text/90 max-w-2xl mx-auto mb-12 animate-slide-up delay-300 relative">
-          <span className="relative inline-block animate-float">
-            Creating innovative digital solutions and leading technological advancement
-          </span>
-        </p>
+        {/* Expanded description with multiple flowing elements */}
+        <div className="space-y-4 mb-12">
+          <p className="text-lg md:text-xl text-dark-text/90 max-w-2xl mx-auto animate-slide-up delay-300">
+            <span className="relative inline-block animate-float">
+              Creating innovative digital solutions
+            </span>
+          </p>
+          <p className="text-lg md:text-xl text-dark-text/90 max-w-2xl mx-auto animate-slide-up delay-400">
+            <span className="relative inline-block animate-float" style={{ animationDelay: "2s" }}>
+              Leading technological advancement
+            </span>
+          </p>
+          <p className="text-lg md:text-xl text-dark-text/90 max-w-2xl mx-auto animate-slide-up delay-500">
+            <span className="relative inline-block animate-float" style={{ animationDelay: "4s" }}>
+              Building the future of web development
+            </span>
+          </p>
+        </div>
 
-        {/* Decorative elements */}
+        {/* Enhanced decorative elements */}
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-primary/5 rounded-full blur-3xl animate-pulse -z-10"></div>
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[300px] h-[300px] bg-accent/5 rounded-full blur-2xl animate-float -z-10"></div>
       </div>
 
-      {/* Scroll indicator */}
+      {/* Animated scroll indicator */}
       <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce-slow">
         <a
           href="#about"
-          className="inline-flex items-center gap-2 bg-primary/20 backdrop-blur-sm border border-primary/50 text-primary-light hover:bg-primary hover:text-dark-bg px-6 py-3 rounded-full transition-all duration-300 font-semibold group"
+          className="inline-flex items-center gap-2 bg-primary/20 backdrop-blur-sm border border-primary/50 text-primary-light hover:bg-primary hover:text-dark-bg px-6 py-3 rounded-full transition-all duration-300 font-semibold group animate-glow"
         >
           <ArrowDown className="group-hover:translate-y-1 transition-transform" />
         </a>
