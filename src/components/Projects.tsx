@@ -4,12 +4,12 @@ import { Toggle } from "@/components/ui/toggle";
 import { Github, ExternalLink, Code2, Rocket } from 'lucide-react';
 
 const projects = [
-  {
-    title: "Typing-Speed-Test",
-    description: "Test and improve your typing speed with real-time feedback and statistics.",
-    tech: ["React", "TypeScript", "Real-time Processing"],
-    github: "https://github.com/Mianhassam96/Typing-Speed-Test",
-    live: "https://typing-speed-test-neon.vercel.app/"
+   {
+    title: "MM-s-2048-Quest",
+    description: " MM's 2048 Quest 🎮 is a modern twist on the classic 2048 puzzle game. Merge tiles, reach 2048, and enjoy smooth gameplay with sound effects, theme switcher, and confetti animations. Built using HTML, CSS, and JavaScript, this game is mobile-friendly, tracks your high score, and offers endless fun. Challenge yourself to master the quest! 🚀 ",
+    tech: ["HTML", "JavsScript", "CSS"],
+    github: "https://github.com/Mianhassam96/MM-s-2048-Quest",
+    live: "https://mm-s-2048-quest.vercel.app/"
   },
   {
     title: "Currency-Converter",
@@ -17,13 +17,6 @@ const projects = [
     tech: ["React", "API Integration", "Financial Data"],
     github: "https://github.com/Mianhassam96/",
     live: "https://currency-converter-green-iota.vercel.app/"
-  },
-  {
-    title: "Text-To-Voice",
-    description: "Convert text to natural-sounding speech with support for multiple languages and voices.",
-    tech: ["React", "Web Speech API", "Audio Processing"],
-    github: "https://github.com/Mianhassam96/Text-To-Voice",
-    live: "https://text-to-voice-black.vercel.app/"
   },
   {
     title: "Background-Remover",
@@ -52,6 +45,20 @@ const projects = [
     tech: ["React", "Video Processing", "Media Handling"],
     github: "https://github.com/Mianhassam96/Video-Processor",
     live: "https://video-processor-lac.vercel.app/"
+  },
+    {
+    title: "Typing-Speed-Test",
+    description: "Test and improve your typing speed with real-time feedback and statistics.",
+    tech: ["React", "TypeScript", "Real-time Processing"],
+    github: "https://github.com/Mianhassam96/Typing-Speed-Test",
+    live: "https://typing-speed-test-neon.vercel.app/"
+  },
+   {
+    title: "Text-To-Voice",
+    description: "Convert text to natural-sounding speech with support for multiple languages and voices.",
+    tech: ["React", "Web Speech API", "Audio Processing"],
+    github: "https://github.com/Mianhassam96/Text-To-Voice",
+    live: "https://text-to-voice-black.vercel.app/"
   },
   {
     title: "MultiMian-World-Explorer",
