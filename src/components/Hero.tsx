@@ -2,16 +2,15 @@ import { ArrowDown } from 'lucide-react';
 
 const Hero = () => {
   return (
-    <section id="home" className="h-screen w-full relative bg-dark-bg">
-      {/* Full-screen banner with parallax effect */}
-      <div 
-        className="absolute inset-0 w-full h-full bg-cover bg-center bg-fixed"
-        style={{ 
-          backgroundImage: 'url("/lovable-uploads/fb1a6909-0433-47b1-ae38-0e07b07e9f01.png")',
-          backgroundSize: 'cover'
-        }}
-      >
-        <div className="absolute inset-0 bg-gradient-to-b from-dark-bg/80 via-dark-bg/60 to-dark-bg/90 backdrop-blur-[1px]"></div>
+    <section id="home" className="h-screen w-full relative bg-dark-bg flex items-center justify-center">
+      {/* Main content */}
+      <div className="container mx-auto px-4 text-center">
+        <h1 className="text-4xl md:text-6xl font-bold text-primary-light mb-6 animate-fade-in">
+          Welcome to My Portfolio
+        </h1>
+        <p className="text-lg md:text-xl text-dark-text/90 max-w-2xl mx-auto mb-8 animate-slide-up">
+          I'm a passionate developer creating beautiful and functional web experiences. Let's build something amazing together.
+        </p>
       </div>
 
       {/* Scroll indicator */}
