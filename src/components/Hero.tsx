@@ -29,16 +29,6 @@ const Hero = () => {
               Creating innovative digital solutions
             </span>
           </p>
-          <p className="text-lg md:text-xl text-dark-text/90 max-w-2xl mx-auto animate-slide-up delay-400">
-            <span className="relative inline-block animate-float" style={{ animationDelay: "2s" }}>
-              Leading technological advancement
-            </span>
-          </p>
-          <p className="text-lg md:text-xl text-dark-text/90 max-w-2xl mx-auto animate-slide-up delay-500">
-            <span className="relative inline-block animate-float" style={{ animationDelay: "4s" }}>
-              Building the future of web development
-            </span>
-          </p>
         </div>
 
         {/* Enhanced decorative elements */}
