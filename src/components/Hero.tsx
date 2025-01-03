@@ -2,15 +2,28 @@ import { ArrowDown } from 'lucide-react';
 
 const Hero = () => {
   return (
-    <section id="home" className="h-screen w-full relative bg-dark-bg flex items-center justify-center">
+    <section id="home" className="h-screen w-full relative bg-dark-bg flex items-center justify-center overflow-hidden">
       {/* Main content */}
-      <div className="container mx-auto px-4 text-center">
-        <h1 className="text-4xl md:text-6xl font-bold text-primary-light mb-6 animate-fade-in">
-          Welcome to My Portfolio
+      <div className="container mx-auto px-4 text-center relative z-10">
+        {/* Animated heading with gradient text */}
+        <h1 className="text-4xl md:text-7xl font-bold mb-6 animate-fade-in bg-gradient-to-r from-primary-light via-accent-light to-primary bg-clip-text text-transparent">
+          Full Stack Developer
         </h1>
-        <p className="text-lg md:text-xl text-dark-text/90 max-w-2xl mx-auto mb-8 animate-slide-up">
-          I'm a passionate developer creating beautiful and functional web experiences. Let's build something amazing together.
+        
+        {/* Animated subheading */}
+        <div className="text-2xl md:text-4xl font-semibold text-primary-light/90 mb-8 animate-slide-up delay-200">
+          CEO & Founder of MultiMian
+        </div>
+        
+        {/* Description with glow effect */}
+        <p className="text-lg md:text-xl text-dark-text/90 max-w-2xl mx-auto mb-12 animate-slide-up delay-300 relative">
+          <span className="relative inline-block animate-float">
+            Creating innovative digital solutions and leading technological advancement
+          </span>
         </p>
+
+        {/* Decorative elements */}
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-primary/5 rounded-full blur-3xl animate-pulse -z-10"></div>
       </div>
 
       {/* Scroll indicator */}
