@@ -45,7 +45,7 @@ const Footer = () => {
 
         <div className="mt-12 pt-8 border-t border-primary/10 text-center">
           <p className="text-gray-400">
-            &copy; {new Date().getFullYear()} Mian Hassam. All rights reserved.
+            &copy; {new Date().getFullYear()} MultiMian. All rights reserved.
           </p>
         </div>
       </div>
