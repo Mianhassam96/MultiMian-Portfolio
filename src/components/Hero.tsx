@@ -5,6 +5,11 @@ const Hero = () => {
     <section id="home" className="h-screen w-full relative bg-dark-bg flex items-center justify-center overflow-hidden">
       {/* Main content */}
       <div className="container mx-auto px-4 text-center relative z-10">
+        {/* Name with flowing animation */}
+        <h2 className="text-2xl md:text-4xl font-semibold mb-4 animate-slide-in bg-gradient-to-r from-accent-light via-primary to-primary-light bg-clip-text text-transparent">
+          I am Mian Hassam
+        </h2>
+        
         {/* Animated flowing heading with enhanced gradient text */}
         <h1 className="text-4xl md:text-7xl font-bold mb-6 animate-slide-in bg-gradient-to-r from-primary-light via-accent-light to-primary bg-clip-text text-transparent hover:scale-105 transition-transform duration-300">
           Full Stack Developer
