@@ -5,6 +5,20 @@ import { Github, ExternalLink, Code2, Rocket } from 'lucide-react';
 
 const projects = [
    {
+    title: "MultiMian-SkyScope",
+    description: "  MultiMain SkyScope : Stay informed and ahead of the weather with the MultiMian SkyScope Weather App. This app provides real-time weather forecasts, including temperature, humidity, wind speed, and more, all tailored to your location. With an intuitive interface and easy navigation, you can quickly check the weather anywhere in the world. ",
+    tech: ["HTML", "TypeScript", "RouterOS Script"],
+    github: "https://github.com/Mianhassam96/MultiMian-SkyScope",
+    live: "https://v0-weather-app-sauqh5veloe.vercel.app/"
+  },
+   {
+    title: "Website-Analysis-Hub",
+    description: "  Unlock your website’s potential with Website Analysis Hub! Get powerful insights into your SEO, performance, traffic, and security. Optimize for better rankings, faster speeds, and enhanced user experience. Simplify website management and boost growth with our easy-to-use tools.  ",
+    tech: ["CSS", "TypeScript", "Other"],
+    github: "https://github.com/Mianhassam96/Website-Analysis-Hub",
+    live: "https://website-analysis-hub.vercel.app/"
+  },
+   {
     title: "MM-s-2048-Quest",
     description: " MM's 2048 Quest 🎮 is a modern twist on the classic 2048 puzzle game. Merge tiles, reach 2048, and enjoy smooth gameplay with sound effects, theme switcher, and confetti animations. Built using HTML, CSS, and JavaScript, this game is mobile-friendly, tracks your high score, and offers endless fun. Challenge yourself to master the quest! 🚀 ",
     tech: ["HTML", "JavsScript", "CSS"],
