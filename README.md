@@ -36,6 +36,7 @@ npm install
 npm start
 
 🌐 Live Demo
+https://multi-mian-portfolio.vercel.app/
 
 Check out the live version of my portfolio: MultiMian Portfolio
 📫 Contact Me
